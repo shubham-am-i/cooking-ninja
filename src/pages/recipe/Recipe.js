@@ -18,7 +18,7 @@ export default function Recipe() {
       {isPending && <p className="loading">Loading...</p>}
       {recipe && (
         <>
-        {/* <img src={recipe.img} alt="" style={{borderRadius:4}}/> */}
+          <img src={recipe.img} alt="" style={{ borderRadius: 4, width: 200 }} />
           <h2 className="page-title">{recipe.title}</h2>
           <p>Takes {recipe.cookingTime} to cook.</p>
           <ul>

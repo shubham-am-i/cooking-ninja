@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import {useHistory} from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 
 // styles
@@ -12,8 +12,8 @@ export default function Create() {
   const [newIngredient, setNewIngredient] = useState("");
   const [ingredients, setIngredients] = useState([]);
   const ingredientInput = useRef(null);
+  const [img, setImage] = useState();
   const history = useHistory();
-
 
   const { postData, data, error } = useFetch(
     "http://localhost:3000/recipes",
@@ -22,11 +22,13 @@ export default function Create() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(img);
     postData({
       title,
       ingredients,
       method,
       cookingTime: cookingTime + " minutes",
+      img,
     });
   };
 
@@ -41,13 +43,12 @@ export default function Create() {
     ingredientInput.current.focus();
   };
 
-
-// redirect the user when we get data response
-  useEffect(()=> {
-    if(data){
-      history.push('/')
+  // redirect the user when we get data response
+  useEffect(() => {
+    if (data) {
+      history.push("/");
     }
-  }, [data])
+  }, [data]);
 
   return (
     <div className="create">
@@ -104,10 +105,13 @@ export default function Create() {
           />
         </label>
 
-        {/* <label>
+        <label>
           <span>Recipe Image:</span>
-          <input type="file" />
-        </label> */}
+          <input
+            type="file"
+            onChange={(e) => setImage(URL.createObjectURL(e.target.files[0]))}
+          />
+        </label>
 
         <button className="btn">submit</button>
       </form>

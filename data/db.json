@@ -3,9 +3,15 @@
     {
       "id": "1",
       "title": "Veggie Stew",
-      "ingredients": ["1 Carrot", "1 Leek", "200g Tofu", "300ml Veg stock"],
+      "ingredients": [
+        "1 Carrot",
+        "1 Leek",
+        "200g Tofu",
+        "300ml Veg stock"
+      ],
       "method": "1. Pre-heat the oven to 200C/3C/gas 5. Place the carrot, leek and tofu in a large bowl. Add the stock and mix well. 2. Add the rest of the ingredients and mix well. 3. Place the mixture in a large bowl and cover with a lid. 4. Place the lid on the oven and cook for 40 minutes. 5. Serve with a slaw of your choice",
-      "cookingTime": "45 minutes"
+      "cookingTime": "45 minutes",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZzzWk9wvb2eQ5k7sp3Zz8GkXALHCie1PyMw&usqp=CAU"
     },
     {
       "id": "2",
@@ -17,7 +23,8 @@
         "100g Mushrooms"
       ],
       "method": "1. Pre-heat the oven to 200C/3C/gas 5. Add the pasata, green pepper and mushrooms to the base. Place the lid on the oven and cook for 30 minutes. 5. Serve with a slaw of your choice",
-      "cookingTime": "35 minutes"
+      "cookingTime": "35 minutes",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm6Yw0YiSObpPameZouoFYjzOP3NDUhCs4PA&usqp=CAU"
     },
     {
       "id": "3",
@@ -30,7 +37,20 @@
         "Olive Oil"
       ],
       "method": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minima ex rem quis similique eum ratione quaerat, voluptas molestias ut repudiandae delectus voluptates. Eius esse at tenetur ab accusamus excepturi?",
-      "cookingTime": "35 minutes"
+      "cookingTime": "35 minutes",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnUq7B1DqN_NQIGmOpWeKfJID-i55X9RY-jg&usqp=CAU"
+    },
+    {
+      "title": "chrome dev tool",
+      "ingredients": [
+        "vscode, chrome,",
+        "logic",
+        "comman sense"
+      ],
+      "method": "open vscode, then create the extension.Test it on chrome. good job. ",
+      "cookingTime": "5 minutes",
+      "img": "blob:http://localhost:3001/3a1d3465-bd33-488f-8013-2a24446ee7ff",
+      "id": "sBe-uuy"
     }
   ]
 }
