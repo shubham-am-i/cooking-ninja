@@ -10,8 +10,10 @@ export default function RecipeList({ recipes }) {
         <div key={recipe.id} className="card">
           <h3>{recipe.title}</h3>
           <p>{recipe.cookingTime} to make.</p>
-          <img src={recipe.images} alt="some-image" />
-          {recipe.images}
+          {/* <img
+            src={recipe.img}
+            alt=""
+          /> */}
           <div>{recipe.method.substring(0, 100)}...</div>
           <Link to={`/recipes/${recipe.id}`}>Cook this</Link>
         </div>

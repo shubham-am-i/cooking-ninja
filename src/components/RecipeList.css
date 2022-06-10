@@ -18,12 +18,22 @@
   transform: rotate(3deg);
 }
 .recipe-list .card h3 {
+  display: inline-block;
   color: #555;
   margin-bottom: 6px;
 }
 .recipe-list .card p {
+  display: inline-block;
   color: #999;
   font-size: 0.9em;
+}
+
+.recipe-list .card img{
+  position:absolute;
+  right: 20px;
+  top: 20px;
+  width: 70px;
+  border-radius: 4px;
 }
 .recipe-list .card div {
   color: #555;
