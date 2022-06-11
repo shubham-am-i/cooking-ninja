@@ -6,14 +6,19 @@ import Home from "./pages/home/Home";
 import Search from "./pages/search/Search";
 import Recipe from "./pages/recipe/Recipe";
 import Create from "./pages/create/Create";
+import ThemeSelector from "./components/ThemeSelector";
 
 import "./App.css";
+import { useTheme } from "./hooks/useTheme";
 
 function App() {
+
+  const { mode } = useTheme()
   return (
-    <div className="App">
+    <div className={`App ${mode}`}>
       <BrowserRouter>
         <Navbar />
+        <ThemeSelector />
         <Switch>
           <Route exact path="/">
             <Home />
